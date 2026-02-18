@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cypress Code Camp — English is the new programming language</title>
+  <meta name="description" content="A one-day camp where you use AI coding agents to ship real software—live on the internet. No syntax memorization required.">
+  <meta name="theme-color" content="#07070B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Orbitron:wght@700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="Cypress Code Camp home">CCC</a>
+    <ul class="nav-links">
+      <li><a href="#story" class="hide-mobile">Story</a></li>
+      <li><a href="#schedule" class="hide-mobile">Schedule</a></li>
+      <li><a href="#requirements" class="hide-mobile">Reqs</a></li>
+      <li><a href="#faq" class="hide-mobile">FAQ</a></li>
+      <li><button class="nav-cta rsvp-trigger">RSVP</button></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<header class="hero section" id="hero">
+  <div class="container">
+    <div class="hero-status">
+      <span class="dot" aria-hidden="true"></span>
+      <span>System Status: Ready</span>
+    </div>
+
+    <div class="hero-title" aria-label="Cypress Code Camp">
+      <div class="hero-title-inner">
+        <span class="hero-title-line hero-title-line--top">Cypress</span>
+        <span class="hero-title-line hero-title-line--mid">Code</span>
+        <span class="hero-title-line hero-title-line--bot">Camp</span>
+      </div>
+      <div class="hero-title-slashes" aria-hidden="true">
+        <span class="slash slash--1"></span>
+        <span class="slash slash--2"></span>
+        <span class="slash slash--3"></span>
+        <span class="slash slash--4"></span>
+      </div>
+    </div>
+    <h1 class="sr-only">Cypress Code Camp</h1>
+    <p class="tagline">This shit is about vibes.</p>
+    <p class="subtitle">English is the new programming language.</p>
+    <p class="hero-body">
+      In one day, you'll use AI coding agents to ship real software—live on the internet—without needing years of syntax memorization.
+    </p>
+
+    <div class="hero-meta">
+      <span><span class="label">Date</span> <span data-placeholder="date">[DATE TBD]</span></span>
+      <span><span class="label">Time</span> 11:00 AM – 8:30 PM</span>
+      <span><span class="label">Location</span> <span data-placeholder="location">[CITY / VENUE TBD]</span></span>
+    </div>
+
+    <div class="hero-actions">
+      <button class="btn btn-primary rsvp-trigger">RSVP / Register</button>
+      <a href="#schedule" class="btn btn-secondary">See Schedule</a>
+    </div>
+
+  </div>
+
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker">
+      <span>BUILD</span><span class="sep">→</span>
+      <span>TEST</span><span class="sep">→</span>
+      <span>SHIP</span><span class="sep">◈</span>
+      <span>未来 / FUTURE</span><span class="sep">◈</span>
+      <span>起動 / BOOT</span><span class="sep">◈</span>
+      <span>BUILD</span><span class="sep">→</span>
+      <span>TEST</span><span class="sep">→</span>
+      <span>SHIP</span><span class="sep">◈</span>
+      <span>SPEC</span><span class="sep">→</span>
+      <span>GENERATE</span><span class="sep">→</span>
+      <span>DEBUG</span><span class="sep">→</span>
+      <span>REFINE</span><span class="sep">→</span>
+      <span>DEPLOY</span><span class="sep">◈</span>
+      <span>未来 / FUTURE</span><span class="sep">◈</span>
+      <span>起動 / BOOT</span><span class="sep">◈</span>
+      <span>BUILD</span><span class="sep">→</span>
+      <span>TEST</span><span class="sep">→</span>
+      <span>SHIP</span><span class="sep">◈</span>
+      <span>SPEC</span><span class="sep">→</span>
+      <span>GENERATE</span><span class="sep">→</span>
+      <span>DEBUG</span><span class="sep">→</span>
+      <span>REFINE</span><span class="sep">→</span>
+      <span>DEPLOY</span><span class="sep">◈</span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════ STORY / WHY ═══════════════════════ -->
+<section class="section" id="story">
+  <div class="container">
+    <p class="section-label" aria-hidden="true">// セクション 01 — WHY</p>
+    <h2>Why this exists</h2>
+
+    <div class="story-grid">
+      <div class="story-card old">
+        <h3>The old world</h3>
+        <p class="muted">Learn syntax first, ship later. Gatekeeping by tooling complexity. Months of bootcamp before you make anything real.</p>
+      </div>
+      <div class="story-card new">
+        <h3>The new world</h3>
+        <p class="muted">Describe intent clearly, ship now. AI translates your thinking into working code—today.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:1.5rem; color: var(--muted);">
+      AI is not just "autocomplete." It's a general-purpose thinking partner that can:
+    </p>
+    <ul class="ai-list">
+      <li>Translate structured English into working code</li>
+      <li>Critique your UX like a harsh reviewer</li>
+      <li>Brainstorm features, edge cases, and product strategy</li>
+      <li>Help you debug when things break</li>
+    </ul>
+
+    <p style="margin-top:1.25rem; color: var(--muted);">
+      This camp exists because the ability to build is no longer reserved for "traditional engineers."
+      If you can think clearly, you can build tools that solve your real problems—and maybe discover a new career path along the way.
+    </p>
+
+    <div class="callout">
+      <strong>AI amplifies you.</strong><br>
+      If you're clear, it multiplies clarity.<br>
+      If you're vague, it multiplies chaos.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ WHAT YOU'LL SHIP ═══════════════════════ -->
+<section class="section" id="ship">
+  <div class="container">
+    <p class="section-label" aria-hidden="true">// セクション 02 — SHIP</p>
+    <h2>What you'll ship</h2>
+    <p style="color: var(--muted); margin-bottom: .5rem;">By the end of the day you'll have:</p>
+
+    <div class="ship-cards">
+      <div class="ship-card">
+        <div class="card-num">01</div>
+        <h3>A live personal tool</h3>
+        <p>Hosted on GitHub Pages—your own URL, your own creation, live on the internet.</p>
+      </div>
+      <div class="ship-card">
+        <div class="card-num">02</div>
+        <h3>A deployed mini app</h3>
+        <p>Built with Next.js and deployed on Vercel. Real framework, real hosting.</p>
+      </div>
+      <div class="ship-card">
+        <div class="card-num">03</div>
+        <h3>A repeatable method</h3>
+        <p>Spec → Generate → Test → Debug → Refine → Ship. A workflow you can use forever.</p>
+      </div>
+      <div class="ship-card">
+        <div class="card-num">04</div>
+        <h3>A continuation roadmap</h3>
+        <p>What to build next, how to keep learning, and a path to Part 2.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SCHEDULE ═══════════════════════ -->
+<section class="section" id="schedule">
+  <div class="container">
+    <p class="section-label" aria-hidden="true">// セクション 03 — SCHEDULE</p>
+    <h2>Schedule — Play-by-play</h2>
+
+    <ol class="schedule-list" role="list">
+
+      <li class="schedule-item">
+        <button class="schedule-header" aria-expanded="false">
+          <span class="schedule-time">11:00–11:30</span>
+          <span class="schedule-title">Arrival + Setup Verification</span>
+          <svg class="schedule-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="schedule-body" aria-hidden="true">
+          <div class="schedule-body-inner">
+            <ul>
+              <li>Confirm accounts, installs, logins</li>
+              <li>Verify core commands: <code>git</code>, <code>node</code>, <code>npm</code></li>
+              <li>Make sure Cursor can access repos</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="schedule-item">
+        <button class="schedule-header" aria-expanded="false">
+          <span class="schedule-time">11:30–12:00</span>
+          <span class="schedule-title">The Reframe: What an LLM Actually Does</span>
+          <svg class="schedule-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="schedule-body" aria-hidden="true">
+          <div class="schedule-body-inner">
+            <ul>
+              <li>LLMs predict the next token (probabilistic pattern engine)</li>
+              <li>Why hallucinations happen</li>
+              <li><strong>Context management:</strong> the model can only "see" what's in the context window — everything else doesn't exist</li>
+              <li>Why long conversations go off the rails (context fills up, early instructions get pushed out)</li>
+              <li>How to stay in control: start fresh often, feed relevant files, keep specs tight</li>
+              <li>Why structured prompts beat vibes-only prompts</li>
+              <li>Live demo: vague vs precise spec</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="schedule-item">
+        <button class="schedule-header" aria-expanded="false">
+          <span class="schedule-time">12:00–12:30</span>
+          <span class="schedule-title">AI Modes + Problem Compression Workshop</span>
+          <svg class="schedule-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="schedule-body" aria-hidden="true">
+          <div class="schedule-body-inner">
+            <ul>
+              <li><strong>The three modes of working with AI:</strong></li>
+              <li><strong>Plan mode</strong> — always start here. Think before you build. The AI helps you design, outline, and pressure-test your idea without writing any code yet</li>
+              <li><strong>Ask mode</strong> — explore and learn. Ask questions, understand concepts, get explanations. Read-only — nothing changes in your project</li>
+              <li><strong>Agent mode</strong> — execute. The AI writes, edits, and runs code across your project. This is where things get built</li>
+              <li>The rule: <strong>Plan → Ask → Agent</strong>. Resist the urge to jump straight into Agent</li>
+              <li>Now apply it: pick a small real problem in your life</li>
+              <li>Use Plan mode to reduce it to a one-page tool: inputs → output</li>
+              <li>Hard constraints: no auth, no DB, one function</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="schedule-item">
+        <button class="schedule-header" aria-expanded="false">
+          <span class="schedule-time">12:30–2:00</span>
+          <span class="schedule-title">Build #1: GitHub Pages Tool (Ship a live URL)</span>
+          <svg class="schedule-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="schedule-body" aria-hidden="true">
+          <div class="schedule-body-inner">
+            <ul>
+              <li>Generate + edit HTML/CSS/JS in Cursor</li>
+              <li>Debug with AI properly</li>
+              <li>Commit + push</li>
+              <li>Enable GitHub Pages</li>
+              <li>Share your link</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="schedule-item">
+        <button class="schedule-header" aria-expanded="false">
+          <span class="schedule-time">2:00–2:30</span>
+          <span class="schedule-title">Late Lunch / Reset</span>
+          <svg class="schedule-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="schedule-body" aria-hidden="true">
+          <div class="schedule-body-inner">
+            <p>Refuel. Stretch. Chat. Look at what others built.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="schedule-item">
+        <button class="schedule-header" aria-expanded="false">
+          <span class="schedule-time">2:30–4:30</span>
+          <span class="schedule-title">Build #2: Mini App (Next.js + Vercel)</span>
+          <svg class="schedule-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="schedule-body" aria-hidden="true">
+          <div class="schedule-body-inner">
+            <ul>
+              <li>Use a starter template</li>
+              <li>Convert your tool into components</li>
+              <li>Add state + validation</li>
+              <li>Deploy to Vercel</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="schedule-item">
+        <button class="schedule-header" aria-expanded="false">
+          <span class="schedule-time">4:30–5:00</span>
+          <span class="schedule-title">Architecture Made Simple</span>
+          <svg class="schedule-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="schedule-body" aria-hidden="true">
+          <div class="schedule-body-inner">
+            <ul>
+              <li>Static vs app hosting</li>
+              <li>Client vs server (just enough to be dangerous)</li>
+              <li>What "deploy" means in real life</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="schedule-item">
+        <button class="schedule-header" aria-expanded="false">
+          <span class="schedule-time">5:00–6:00</span>
+          <span class="schedule-title">AI as a General Partner (Not Just Coding)</span>
+          <svg class="schedule-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="schedule-body" aria-hidden="true">
+          <div class="schedule-body-inner">
+            <ul>
+              <li>Use AI as: Builder / Critic / Strategist</li>
+              <li>UX critique prompts</li>
+              <li>Edge case brainstorming</li>
+              <li>Behavior + motivation analysis</li>
+              <li>Make your app simpler and more useful</li>
+              <li>The model landscape: Claude, Codex, GPT, Gemini — what each is good at</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="schedule-item">
+        <button class="schedule-header" aria-expanded="false">
+          <span class="schedule-time">6:00–6:30</span>
+          <span class="schedule-title">Dinner Break</span>
+          <svg class="schedule-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="schedule-body" aria-hidden="true">
+          <div class="schedule-body-inner">
+            <p>Eat. Recharge. Talk about what you've built so far.</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="schedule-item">
+        <button class="schedule-header" aria-expanded="false">
+          <span class="schedule-time">6:30–7:30</span>
+          <span class="schedule-title">Git Workflow + Bonus: Claude Code in the Terminal</span>
+          <svg class="schedule-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="schedule-body" aria-hidden="true">
+          <div class="schedule-body-inner">
+            <ul>
+              <li>Create a feature branch</li>
+              <li>Make a small improvement</li>
+              <li>Open PR</li>
+              <li>Merge</li>
+              <li><strong>Bonus: Claude Code (terminal-native AI)</strong></li>
+              <li>Cursor is great for everyday building — visual, fast, approachable</li>
+              <li>Claude Code is the same AI, but lives in your terminal — no GUI, pure command line</li>
+              <li>Why it matters: as you advance toward full developer workflows, the terminal is where power users live</li>
+              <li>Live demo: run Claude Code on a task you just did in Cursor and see the difference</li>
+              <li>When to use which: Cursor for building, Claude Code for scripting, automation, and deep repo work</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="schedule-item">
+        <button class="schedule-header" aria-expanded="false">
+          <span class="schedule-time">7:30–8:30</span>
+          <span class="schedule-title">Showcase + Next Steps</span>
+          <svg class="schedule-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="schedule-body" aria-hidden="true">
+          <div class="schedule-body-inner">
+            <ul>
+              <li>Lightning demos</li>
+              <li>What to build next (3-week roadmap)</li>
+              <li>Preview Part 2: contributing to a real app codebase</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+</section>
+
+<!-- ═══════════════════════ REQUIREMENTS ═══════════════════════ -->
+<section class="section" id="requirements">
+  <div class="container">
+    <p class="section-label" aria-hidden="true">// セクション 04 — REQUIREMENTS</p>
+    <h2>What to bring + setup</h2>
+
+    <div class="req-grid">
+      <!-- Column 1: Bring -->
+      <div class="req-col">
+        <h3>Bring</h3>
+        <ul class="req-list">
+          <li><strong>MacBook</strong> (required)</li>
+          <li>Charger</li>
+          <li>Reliable internet access (or hotspot)</li>
+          <li>20 GB free disk space minimum</li>
+          <li>Optional: headphones</li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Before you arrive -->
+      <div class="req-col">
+        <h3>Before you arrive</h3>
+
+        <h4>Operating System</h4>
+        <ul class="req-list">
+          <li>macOS updated to latest stable</li>
+        </ul>
+
+        <h4>Accounts</h4>
+        <ul class="req-list">
+          <li>GitHub account (logged in)</li>
+          <li>Vercel account (sign in with GitHub)</li>
+          <li>Anthropic account (for Claude access)</li>
+          <li>Cursor account (logged in)</li>
+        </ul>
+
+        <h4>Installed</h4>
+        <ul class="req-list">
+          <li>Git installed</li>
+        </ul>
+        <div class="cmd-block">
+          <code>git --version</code>
+          <button class="btn btn-small copy-btn" data-copy="git --version" aria-label="Copy command">COPY</button>
+        </div>
+        <ul class="req-list">
+          <li>Node.js (LTS) installed</li>
+        </ul>
+        <div class="cmd-block">
+          <code>node -v && npm -v</code>
+          <button class="btn btn-small copy-btn" data-copy="node -v && npm -v" aria-label="Copy command">COPY</button>
+        </div>
+        <ul class="req-list">
+          <li>Cursor installed + logged in</li>
+        </ul>
+
+        <h4>Sanity Check</h4>
+        <ul class="req-list">
+          <li>You can create a GitHub repo</li>
+          <li>You can clone it locally</li>
+          <li>You can run a simple Node command</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FAQ ═══════════════════════ -->
+<section class="section" id="faq">
+  <div class="container">
+    <p class="section-label" aria-hidden="true">// セクション 05 — FAQ</p>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do I need to know how to code?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" aria-hidden="true">
+          <div class="faq-answer-inner">No. You need curiosity and comfort following instructions. We'll use AI to generate code, and you'll learn how to supervise it.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is this just "prompt engineering"?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" aria-hidden="true">
+          <div class="faq-answer-inner">No. You'll learn specification, debugging, and shipping. Prompts are just the interface.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What if I don't finish?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" aria-hidden="true">
+          <div class="faq-answer-inner">The day is designed so everyone ships. Constraints are strict on purpose.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Will we use VSCode?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" aria-hidden="true">
+          <div class="faq-answer-inner">No. We'll use Cursor with Claude (Anthropic) as the primary model. We'll also touch on other models like OpenAI's Codex so you understand the landscape, but Claude is our main tool for the day.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What if I'm on Windows?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" aria-hidden="true">
+          <div class="faq-answer-inner">This session is Mac-only to keep setup consistent.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is there a Part 2?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" aria-hidden="true">
+          <div class="faq-answer-inner">Yes. Part 2 moves into professional workflows: contributing to a real app codebase, deeper architecture, testing, and scaling.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I use this for my career?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-answer" aria-hidden="true">
+          <div class="faq-answer-inner">Yes—if you keep building after. We'll give you a roadmap.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ CTA BANNER ═══════════════════════ -->
+<section class="cta-banner section" id="rsvp">
+  <div class="container">
+    <h2 class="neon-text-cyan">Ready to ship your first live tool?</h2>
+    <button class="btn btn-primary rsvp-trigger">RSVP / Register</button>
+    <p class="cta-contact">Questions? <a href="#" data-placeholder="contact">Contact us</a></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Cypress Code Camp</span>
+    <span class="footer-micro">未来 / FUTURE &nbsp;·&nbsp; 起動 / BOOT &nbsp;·&nbsp; BUILD → TEST → SHIP</span>
+    <span class="footer-micro">&copy; <span id="year"></span> Cypress Code Camp. All rights reserved.</span>
+  </div>
+</footer>
+
+<!-- ═══════════════════════ STICKY MOBILE CTA ═══════════════════════ -->
+<div class="mobile-cta">
+  <button class="btn btn-primary rsvp-trigger">RSVP / Register</button>
+</div>
+
+<!-- ═══════════════════════ RSVP MODAL ═══════════════════════ -->
+<div class="rsvp-modal" id="rsvp-modal" aria-hidden="true" role="dialog" aria-labelledby="rsvp-modal-title">
+  <div class="rsvp-modal-backdrop"></div>
+  <div class="rsvp-modal-content">
+    <div class="rsvp-modal-glitch" aria-hidden="true"></div>
+    <div class="rsvp-modal-inner">
+      <div class="rsvp-modal-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L29.5 17.5H44L32.5 26.5L36 41L24 32L12 41L15.5 26.5L4 17.5H18.5L24 4Z" fill="url(#modal-star)"/><defs><linearGradient id="modal-star" x1="4" y1="4" x2="44" y2="41"><stop stop-color="#00F5FF"/><stop offset=".5" stop-color="#FF2BD6"/><stop offset="1" stop-color="#B6FF2E"/></linearGradient></defs></svg>
+      </div>
+      <p class="rsvp-modal-eyebrow" aria-hidden="true">// ACCESS PROTOCOL</p>
+      <h3 id="rsvp-modal-title" class="rsvp-modal-headline">If you're invited,<br>you'll know.</h3>
+      <p class="rsvp-modal-body">Message <strong>"I'm coming"</strong> in the<br><span class="rsvp-modal-crew">Cypress crew.</span></p>
+      <div class="rsvp-modal-bar" aria-hidden="true">
+        <span class="rsvp-modal-bar-fill"></span>
+      </div>
+      <button class="btn btn-secondary rsvp-modal-close" aria-label="Close modal">GOT IT</button>
+      <p class="rsvp-modal-micro" aria-hidden="true">招待制 / INVITE ONLY</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
