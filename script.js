@@ -9,7 +9,7 @@
   const CONFIG = {
     date: 'February 28',
     location: "Eric's House",
-    registrationUrl: '#',       // replace with real URL
+    registrationUrl: 'https://admin.typeform.com/form/F0ZbeCqZ/share',
     contactUrl: '#',            // replace with real email/link
   };
 

@@ -973,12 +973,22 @@ body::after {
   100% { width: 100%; }
 }
 
+.rsvp-modal-register {
+  opacity: 0;
+  min-width: 180px;
+  text-decoration: none;
+}
+.rsvp-modal.active .rsvp-modal-register {
+  animation: modal-fade-up .35s .85s ease forwards;
+}
+
 .rsvp-modal-close {
   opacity: 0;
   min-width: 140px;
+  margin-top: .5rem;
 }
 .rsvp-modal.active .rsvp-modal-close {
-  animation: modal-fade-up .35s .9s ease forwards;
+  animation: modal-fade-up .35s .95s ease forwards;
 }
 
 .rsvp-modal-micro {
