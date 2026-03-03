@@ -131,10 +131,85 @@ body::after {
 }
 .nav-links .nav-cta:hover { background: var(--neon-magenta); color: var(--bg); }
 
+/* --- Hamburger button --- */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color .2s;
+}
+.nav-hamburger:hover,
+.nav-hamburger:active { border-color: var(--neon-cyan); }
+.nav-hamburger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--muted);
+  border-radius: 2px;
+  transition: transform .3s, opacity .3s, background .2s;
+}
+.nav-hamburger:hover span,
+.nav-hamburger:active span { background: var(--neon-cyan); }
+.nav-hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); background: var(--neon-cyan); }
+.nav-hamburger.active span:nth-child(2) { opacity: 0; }
+.nav-hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); background: var(--neon-cyan); }
+
+/* --- Mobile menu panel --- */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: var(--nav-h);
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: rgba(7, 7, 11, .96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--panel-border);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s cubic-bezier(.22, 1, .36, 1);
+}
+.mobile-menu.open {
+  max-height: 320px;
+}
+.mobile-menu-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px 20px;
+  gap: 4px;
+}
+.mobile-menu-link {
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: color .2s, background .2s;
+}
+.mobile-menu-link:hover,
+.mobile-menu-link:active {
+  color: var(--neon-cyan);
+  background: rgba(0, 245, 255, .06);
+}
+
 /* Hide extra links on small screens */
 @media (max-width: 640px) {
   .nav-links .hide-mobile { display: none; }
   .nav-links { gap: .2rem; }
+  .nav-hamburger { display: flex; }
+  .mobile-menu { display: block; }
 }
 
 /* --- Buttons --- */
