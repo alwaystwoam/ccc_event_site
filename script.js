@@ -249,7 +249,7 @@
       }
     });
 
-    menu.querySelectorAll('.mobile-menu-link').forEach(link => {
+    menu.querySelectorAll('.mobile-menu-link, .mobile-menu-rsvp').forEach(link => {
       link.addEventListener('click', closeMenu);
     });
 
